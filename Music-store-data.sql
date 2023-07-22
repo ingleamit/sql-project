@@ -3,7 +3,7 @@
 SELECT title, last_name, first_name 
 FROM employee
 ORDER BY levels DESC
-LIMIT 1
+LIMIT 1;
 
 
  /*Q2: Which countries have the most Invoices?*/
@@ -11,14 +11,14 @@ LIMIT 1
 SELECT COUNT(*) As c, billing_country 
 FROM invoice
 GROUP BY billing_country
-ORDER BY c DESC
+ORDER BY c DESC;
 
 
 /* Q3: What are top 3 values of total invoice? */
 
 SELECT total 
 FROM invoice
-ORDER BY total DESC
+ORDER BY total DESC;
 
 
 /* Q4: Which city has the best customers? We would like to throw a promotional Music Festival in the city we made the most money. 
